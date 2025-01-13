@@ -1,0 +1,21 @@
+name: flare_flutter
+description: Rive Flutter Runtime. This package provides runtime functionality for playing back and interacting with animations built with the Rive editor available at https://rive.app.
+repository: https://github.com/rive-app/rive-flutter
+
+publish_to: "none"
+
+version: 3.0.2+10
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  collection: ^1.18.0
+  flutter:
+    sdk: flutter
+  meta: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
