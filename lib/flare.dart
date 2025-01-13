@@ -202,7 +202,7 @@ class FlutterActorArtboard extends ActorArtboard {
   }
 }
 
-abstract class FlutterActorDrawable {
+abstract mixin class FlutterActorDrawable {
   bool _antialias = true;
   ui.BlendMode _blendMode = ui.BlendMode.srcOver;
 
@@ -1050,7 +1050,7 @@ class FlutterColorStroke extends ColorStroke with FlutterStroke {
   }
 }
 
-abstract class FlutterFill {
+abstract mixin class FlutterFill {
   late ui.Paint _paint;
 
   void initializeGraphics() {
@@ -1205,7 +1205,7 @@ abstract class FlutterPath {
 /// that FlutterPath. Most shapes can use this, but if they want to
 /// use a different procedural backing call, they should implement
 /// FlutterPath and generate the path another way.
-abstract class FlutterPathPointsPath implements FlutterPath {
+abstract mixin class FlutterPathPointsPath implements FlutterPath {
   late ui.Path _path;
   bool _isValid = false;
   List<PathPoint> get deformedPoints;
@@ -1463,7 +1463,7 @@ class FlutterRadialStroke extends RadialGradientStroke with FlutterStroke {
   }
 }
 
-abstract class FlutterStroke {
+abstract mixin class FlutterStroke {
   late ui.Paint _paint;
   ui.Path? effectPath;
   void initializeGraphics() {
